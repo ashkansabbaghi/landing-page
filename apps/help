@@ -1,0 +1,13 @@
+ذخیره داخل دیتابیس
+
+python manage.py makemigrations
+python manage.py migrate
+
+اجرا کردن فایل
+python manage.py runserver
+
+اکتیو
+PS C:\xampp\htdocs\landing-page\venv\scripts> activate 
+
+ساخت app
+PS C:\xampp\htdocs\landing-page\apps> python manage.py startapp foods
