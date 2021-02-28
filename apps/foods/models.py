@@ -7,9 +7,9 @@ class food (models.Model):
     name = models.CharField(max_length=100)
     description = models.CharField(_("توضیحات"), max_length=50)
     photo = models.ImageField(upload_to = "foods/")
-    rate = models.IntegerField(_("اعتبار"))
+    rate = models.IntegerField(_("اعتبار") , default=0)
 
 
     def __str__(self):
-        return self.name , self.rate , self.description
+        return self.name , self.description
 
