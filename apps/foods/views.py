@@ -8,6 +8,7 @@ def food_list (req) :
     }
 
     return render(req , "foods/index.html",context)
+    # return render(req , "foods/list.html",context)
 
 
 def food_details (req , id ): 
