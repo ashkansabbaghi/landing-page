@@ -1,0 +1,299 @@
+.home {
+    @include hp($bgcolor1, fit-conten);
+
+    .getting-started {
+        margin-right: $m-5;
+    }
+
+    .nav {
+        font-size: $fontsizenav;
+        @include responsive (md){
+            font-size: $fontsizenav-md;
+        }
+    }
+
+    .logo {
+        margin-left: $m-5;
+        font-size: $fontsizelogo;
+
+        @include responsive (md){
+            margin-left: 2rem;
+            font-size: $fontsizelogo-md;
+        }
+
+    }
+
+    .hiro {
+        height: $sizehiro;
+        margin-top: 5rem;
+        @include responsive (md){
+            height: $sizehiro-md;
+        }
+        
+
+        .bg-hiro {
+            @include bg-hiro(80%, 20%)
+        }
+
+        .hiro-info {
+            z-index: $zindexon;
+            position: relative;
+            padding: 0;
+            bottom: 4rem;
+
+            .list-hiro-info {
+                height: 4rem;
+            }
+
+            .list-group-item {
+                border: none;
+            }
+        }
+
+        .hiro-title {
+            z-index: $zindexon;
+            position: absolute;
+            top: 45%;
+            @include responsive(md) {
+                top: 60%;
+            }
+
+
+            .title-h1 {
+                font-size: $fontsizehirotxt;
+                margin-left: $m-5;
+
+                @include responsive(md) {
+                    font-size: $fontsizehirotxt-md
+                }
+            }
+
+            .input-group {
+                @include input-group-search(3rem);
+
+            }
+
+            .form-outline {
+                margin-left: $m-5;
+            }
+
+            .btn-search {
+                @include btn-search;
+            }
+
+
+        }
+    }
+
+    .company {
+        padding: 160px 5rem 2rem 5rem;
+
+        @include responsive(md){
+            padding: 2rem 1rem 1rem 2rem;
+        }
+
+        .title {
+            font-size: $fontsizeheadertitle;
+        }
+
+        .text {
+            font-size: $fontsizetext;
+        }
+
+        .info {
+            margin-top: 1rem;
+
+            .title {
+                margin-bottom: 4rem;
+            }
+
+            .text {
+                width: 90%;
+            }
+        }
+
+        .card {
+            box-shadow: none;
+            margin-bottom: 1rem;
+
+            .card-title {
+                position: relative;
+                top: 40%;
+            }
+
+            .card-text {
+                @extend .card-title;
+            }
+        }
+    }
+
+}
+
+.product {
+    @include hp($bgcolor2, fit-content);
+
+    .card {
+
+        .card-title {
+            font-size: $fontsizecardproducttitle;
+            padding: .5rem;
+        }
+
+        .card-text {
+            font-size: $fontsizecardproducttext;
+            padding: .5rem;
+        }
+
+        .card-info {
+            display: inline-block;
+            float: right;
+            color: $textcolorwhite-50;
+        }
+    }
+
+    // search
+    .input-group {
+        @include input-group-search(1rem);
+    }
+
+    .ic-search {
+
+        padding-left: 1.5rem;
+    }
+
+    .input-search {
+        padding: 1.5rem 1.5rem 1.5rem 0;
+    }
+
+    .btn-search {
+        @include btn-search;
+    }
+
+    .view-all-box {
+        background: white;
+        width: 45%;
+        padding: 1.5rem;
+        border-radius: .25rem;
+        margin-top: 1rem;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+.about {
+    @include hp($bgcolor1, fit-content);
+
+}
+
+.service {
+    @include hp($bgcolor1, fit-content);
+
+    .bg-hiro {
+        @include bg-hiro(50%, 0);
+        position: absolute;
+        height: 100%;
+    }
+
+    .info {
+        width: 50%;
+        margin-right: 0;
+    }
+}
+
+.ads {
+    @include hp($bgcolor1, fit-content);
+    padding: 5rem 1rem;
+
+    .ads-part-img {
+        text-align: center;
+        text-align: -webkit-center;
+
+        .img-ads {
+            width: 100%;
+        }
+
+        .btn-ads {
+            position: relative;
+            top: -40px;
+            font-size: $fontsizebtnads;
+            border-radius: 0;
+
+        }
+
+        .btn-ads-right {
+            right: -25%;
+
+        }
+
+        .icon-btn-ads {
+            padding: 0 1.5rem;
+        }
+    }
+
+    .ads-part-txt {
+        margin: auto;
+
+        .title {
+            font-size: $fontsizetitle;
+            margin: 2rem 0;
+        }
+    }
+
+
+}
+
+.footer {
+    background: $bgcolorfooter;
+
+    // search
+    .input-group {
+        @include input-group-search(1rem);
+    }
+
+    .ic-search {
+
+        padding-left: 1.5rem;
+    }
+
+    .input-search {
+        padding: 1.5rem 1.5rem 1.5rem 0;
+    }
+
+    .btn-search {
+        @include btn-search;
+    }
+
+    // end search
+
+    .hr-white {
+        background: white;
+        height: 2px;
+    }
+
+    .list-footer {
+        background: none;
+
+        .list-group-item-action {
+            color: white;
+            background: none;
+            box-shadow: none;
+            border: none;
+        }
+
+        .active {
+            color: $textcolorlistfooter;
+            margin-bottom: 1rem;
+
+        }
+    }
+
+    .logo {
+        font-size: $fontsizetitle;
+        display: block;
+        margin-bottom: 3rem;
+    }
+
+    .info-footer {
+        font-size: $fontsizeinfofooter;
+    }
+}

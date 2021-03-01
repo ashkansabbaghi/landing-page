@@ -1,0 +1,17 @@
+@import"var";
+
+@mixin responsive ($point) {
+
+    @if $point==phone {
+        @media only screen and (max-width : 600px) {
+            @content
+        }
+    }
+    @if $point==md {
+        @media only screen and (max-width : 991px) {
+            @content
+        }
+    }
+
+}
+

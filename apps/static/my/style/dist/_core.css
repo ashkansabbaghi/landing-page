@@ -1,0 +1,71 @@
+body {
+  color: #1f373d;
+  font-size: 13px;
+}
+
+a {
+  color: #1f373d;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+}
+
+p {
+  text-align: justify;
+  line-height: 25pt;
+}
+
+.btn-warning {
+  color: #1f373d;
+}
+.btn-warning:hover {
+  color: black;
+}
+
+.card {
+  border: none;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+.form-control {
+  border: none;
+  text-align: end;
+  outline: none;
+}
+
+.input-group-text {
+  background: white;
+  border: none;
+  height: 100%;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.cursor-pointer:hover {
+  opacity: 0.8;
+}
+
+.btn-padding {
+  padding: 1rem 2rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.p-6 {
+  padding: 4rem !important;
+}
+
+.btn-white {
+  background: white;
+}

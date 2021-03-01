@@ -1,0 +1,595 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>learn django</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="{% static 'bootstarp/css/bootstrap.rtl.min.css' %}"> -->
+    <!-- <link rel="stylesheet" href="{% static 'bootstarp/css/bootstrap.rtl.min.css' %}" > -->
+    <!-- font-awesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'my/style/style.css' %}" >
+</head>
+
+<body>
+    <!-- home -->
+    <div class="container-fluid home">
+        <div class="row">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-3  align-self-center">
+                        <ul class=" nav  p-0 logo">
+                            <li class="nav-item ">
+                                <a class="nav-link  pl-5" href="#">luxestate</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- logo -->
+                    <div class="col-lg-7 col-sm-9 align-self-center">
+                        <ul class=" nav justify-content-end ">
+                            <li class="nav-item ">
+                                <a class="nav-link " href="#">About</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="#">Appartments</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="#">How It Work</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="#">Agents</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- category -->
+                    <div class="col-lg-3 align-self-center">
+                        <div class="continer">
+                            <div class="row p-4">
+                                <div class="col-5 m-auto p-0">
+                                    <a class="nav-link text-center float-lg-start " href="#">Join Us</a>
+                                </div>
+                                <div class="col-7 p-0 ">
+                                    <a class="nav-link btn btn-warning " href="#">Getting Started</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- getting started -->
+                </div>
+            </div>
+        </div>
+        <!--nav-->
+        <div class="row">
+            <div class="container hiro">
+                <div class="row h-100">
+                    <span class="bg-hiro"></span>
+                    <div class="hiro-title">
+                        <h1 class="title-h1">Find Your New <br> Modern Apartment</h1>
+                        <div class="input-group">
+                            <button id="search-button" type="button" class="btn btn-warning btn-search">
+                                search
+                                <i class="fa fa-search"></i>
+                            </button>
+                            <div class="form-outline w-25 ">
+                                <input id="search-input" type="search" id="form1" class="search form-control p-4"
+                                    placeholder="Search loacations" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hiro-info ">
+                        <div class="list-group list-group-horizontal list-hiro-info rtl">
+                            <a href="#" class="list-group-item bg-warning p-3">Melbourne,Australia
+                                <img src="file/img/ic-location-white.svg" alt="image">
+                            </a>
+                            <a href="#" class="list-group-item bg-warning p-3">(000) 123-4567
+                                <img src="file/img/ic-phone-white.svg" alt="image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--hiro-->
+
+        <div class="row">
+            <div class="container company">
+                <div class="row">
+                    <div class="col-md-6 info">
+                        <h3 class=title>Our’s Company <br> Statistics</h3>
+                        <p class="text">In this space market-facing, yet UI work flows , or bake it in. Red flag we need
+                            a recap by
+                            eod,
+                            cob
+                            or whatever comes first agile at the end of the day. Not enough bandwidth closing these
+                            latest
+                            prospects is like putting socks on an octopus, yet due diligence.
+                            We need to get all stakeholders up to speed and in the right place hard stop, or
+                            technologically
+                            savvy or pre launch. Pro-sumer software commitment to the cause offline this discussion and
+                            wiggle
+                            room blue sky. Beef up teams were able to drive adoption and awareness. Screw the pooch
+                            killing
+                            it.
+                        </p>
+                    </div>
+                    <!--text company -->
+                    <div class="col-md-6">
+                        <div class="container-fluid mt-5">
+                            <div class="row ">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="file/img/Path.png" class="card-img" alt="">
+                                        <div class="card-img-overlay text-center">
+                                            <h5 class="card-title">748</h5>
+                                            <span class="card-text">Appartments</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card 1 -->
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="file/img/Path.png" class="card-img" alt="">
+                                        <div class="card-img-overlay text-center">
+                                            <h5 class="card-title">748</h5>
+                                            <span class="card-text">Appartments</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card 2 -->
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="file/img/Path.png" class="card-img" alt="">
+                                        <div class="card-img-overlay text-center">
+                                            <h5 class="card-title">748</h5>
+                                            <span class="card-text">Appartments</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card 3 -->
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <img src="file/img/Path.png" class="card-img" alt="">
+                                        <div class="card-img-overlay text-center">
+                                            <h5 class="card-title">748</h5>
+                                            <span class="card-text">Appartments</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- card 4 -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 image -->
+                </div>
+            </div>
+        </div>
+        <!--company-->
+    </div>
+    <!-- product -->
+    <div class="container-fluid product">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="title">More Then 500+ <br> Appartments For Rent</h3>
+            </div>
+            <!--title products-->
+
+            <!-- items products -->
+            <div class="col-md-4 p-4">
+                <div class="card">
+                    <img class="card-img-top" src="file/img/img-emety.png" alt="">
+                    <div class="card-body pb-4">
+                        <h4 class="card-title">Random Street, Apt B453, New York</h4>
+                        <span class="card-text">$13,500</span>
+                        <div class="card-info">
+                            <span class="card-text"><img src="/file/img/ic-dosh.svg" alt="ic"></span>
+                            <span class="card-text">5DB</span>
+                            <span class="card-text"><img src="/file/img/ic-bed.svg" alt="ic"></span>
+                            <span class="card-text">5DB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-4">
+                <div class="card">
+                    <img class="card-img-top" src="file/img/img-emety.png" alt="">
+                    <div class="card-body pb-4">
+                        <h4 class="card-title">Random Street, Apt B453, New York</h4>
+                        <span class="card-text">$13,500</span>
+                        <div class="card-info">
+                            <span class="card-text"><img src="/file/img/ic-dosh.svg" alt="ic"></span>
+                            <span class="card-text">5DB</span>
+                            <span class="card-text"><img src="/file/img/ic-bed.svg" alt="ic"></span>
+                            <span class="card-text">5DB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-4">
+                <div class="card">
+                    <img class="card-img-top" src="file/img/img-emety.png" alt="">
+                    <div class="card-body pb-4">
+                        <h4 class="card-title">Random Street, Apt B453, New York</h4>
+                        <span class="card-text">$13,500</span>
+                        <div class="card-info">
+                            <span class="card-text"><img src="/file/img/ic-dosh.svg" alt="ic"></span>
+                            <span class="card-text">5DB</span>
+                            <span class="card-text"><img src="/file/img/ic-bed.svg" alt="ic"></span>
+                            <span class="card-text">5DB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-4">
+                <div class="card">
+                    <img class="card-img-top" src="file/img/img-emety.png" alt="">
+                    <div class="card-body pb-4">
+                        <h4 class="card-title">Random Street, Apt B453, New York</h4>
+                        <span class="card-text">$13,500</span>
+                        <div class="card-info">
+                            <span class="card-text"><img src="/file/img/ic-dosh.svg" alt="ic"></span>
+                            <span class="card-text">5DB</span>
+                            <span class="card-text"><img src="/file/img/ic-bed.svg" alt="ic"></span>
+                            <span class="card-text">5DB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-4">
+                <div class="card">
+                    <img class="card-img-top" src="file/img/img-emety.png" alt="">
+                    <div class="card-body pb-4">
+                        <h4 class="card-title">Random Street, Apt B453, New York</h4>
+                        <span class="card-text">$13,500</span>
+                        <div class="card-info">
+                            <span class="card-text"><img src="/file/img/ic-dosh.svg" alt="ic"></span>
+                            <span class="card-text">5DB</span>
+                            <span class="card-text"><img src="/file/img/ic-bed.svg" alt="ic"></span>
+                            <span class="card-text">5DB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-4">
+                <div class="card">
+                    <img class="card-img-top" src="file/img/img-emety.png" alt="">
+                    <div class="card-body pb-4">
+                        <h4 class="card-title">Random Street, Apt B453, New York</h4>
+                        <span class="card-text">$13,500</span>
+                        <div class="card-info">
+                            <span class="card-text"><img src="/file/img/ic-dosh.svg" alt="ic"></span>
+                            <span class="card-text">5DB</span>
+                            <span class="card-text"><img src="/file/img/ic-bed.svg" alt="ic"></span>
+                            <span class="card-text">5DB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- items products -->
+
+            <!-- search box -->
+            <div class="col-md-6 p-4">
+                <div class="input-group">
+                    <button id="search-button" type="button" class="btn btn-warning  btn-search">
+                        search
+                    </button>
+                    <input id="search-input" type="search" id="form1" class=" form-control input-search"
+                        placeholder="Search loacations" />
+                    <div class="input-group-append">
+                        <span class="input-group-text ic-search"><i class="fa fa-search text-black-50"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- view all box -->
+            <div class="col-md-6 p-4">
+                <div class="view-all-box ">
+                    <span>View All Appartments</span>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <!-- about -->
+    <div class="container-fluid about">
+        <div class="row">
+            <!-- title works -->
+            <div class="col-md-12">
+                <h3 class="title">How it works?</h3>
+            </div>
+            <!-- sub title works -->
+            <div class="col-md-12">
+                <p class="sub-title ">In this space market-facing, yet UI work flows , or bake it in. Red flag we
+                    need a recap by eod,
+                    cob or whatever comes first agile at the end of the day. </p>
+            </div>
+
+            <!-- items -->
+            <div class="col-md-4 p-4">
+                <div class="card">
+                    <img class="card-img-top" src="file/img/img-about-card.png" alt="about">
+                </div>
+            </div>
+            <div class="col-md-4 p-4">
+                <div class="card">
+                    <img class="card-img-top" src="file/img/img-about-card.png" alt="about">
+                </div>
+            </div>
+            <div class="col-md-4 p-4">
+                <div class="card">
+                    <img class="card-img-top" src="file/img/img-about-card.png" alt="about">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- service -->
+    <div class="container-fluid service">
+        <div class="row">
+            <!-- title service -->
+            <div class="col-md-12">
+                <h3 class="title pt-5">Services</h3>
+            </div>
+            <!-- sub title service -->
+            <div class="col-md-12">
+                <p class="sub-title ">In this space market-facing, yet UI work flows , or bake it in. Red flag we need a
+                    first agile at the end of the day. </p>
+            </div>
+            <div class="row">
+
+                <div class="col-md-12 position-relative mb-5">
+                    <span class="bg-hiro"></span>
+                    <div class="container-fluid info">
+
+                        <div class="row">
+                            <div class="col-12 mb-3 p-5 pt-0">
+                                <h4 class="title-hiro">Renting</h4>
+                                <p>In this space market-facing, yet UI work flows , or bake it in. Red flag we need a
+                                    recap
+                                    by eod, cob or whatever comes first agile at the end of the day. Not enough
+                                    bandwidth
+                                    closing these latest prospects is like putting socks on an octopus, yet due
+                                    diligence
+                                </p>
+                            </div>
+                            <div class="col-12 mb-3 p-5 pt-0">
+                                <h4 class="title-hiro">Renting</h4>
+                                <p>In this space market-facing, yet UI work flows , or bake it in. Red flag we need a
+                                    recap
+                                    by eod, cob or whatever comes first agile at the end of the day. Not enough
+                                    bandwidth
+                                    closing these latest prospects is like putting socks on an octopus, yet due
+                                    diligence
+                                </p>
+                            </div>
+                            <div class="col-12 mb-3 p-5 pt-0">
+                                <h4 class="title-hiro">Renting</h4>
+                                <p>In this space market-facing, yet UI work flows , or bake it in. Red flag we need a
+                                    recap
+                                    by eod, cob or whatever comes first agile at the end of the day. Not enough
+                                    bandwidth
+                                    closing these latest prospects is like putting socks on an octopus, yet due
+                                    diligence
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- product 2 -->
+    <div class="container-fluid product">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="title">Meet Our Agents</h3>
+                <p class="sub-title">In this space market-facing, yet UI work flows , or bake it in. Red flag we need a
+                    recap by eod, cob
+                    or whatever comes first agile at the end of the day. </p>
+            </div>
+            <!--title products-->
+
+            <!-- items products start -->
+            <div class="container mb-5">
+                <div class="row">
+                    <div class="col-md-4 p-4">
+                        <div class="card">
+                            <img class="card-img-top" src="file/img/img-emety.png" alt="">
+                            <div class="card-body pb-4">
+                                <h4 class="card-title">Agent</h4>
+                                <span class="card-text text-warning">Mr. Luke Skywalker</span>
+                                <div class="card-info">
+                                    <span class="card-text cursor-pointer"><img src="/file/img/ic-ball.svg"
+                                            alt="ic"></span>
+                                    <span class="card-text cursor-pointer"><img src="/file/img/ic-twitte.svg"
+                                            alt="ic"></span>
+                                    <span class="card-text cursor-pointer"><img src="/file/img/ic-facebook.svg"
+                                            alt="ic"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-4">
+                        <div class="card">
+                            <img class="card-img-top" src="file/img/img-emety.png" alt="">
+                            <div class="card-body pb-4">
+                                <h4 class="card-title">Agent</h4>
+                                <span class="card-text text-warning">Mr. Luke Skywalker</span>
+                                <div class="card-info">
+                                    <span class="card-text cursor-pointer"><img src="/file/img/ic-ball.svg"
+                                            alt="ic"></span>
+                                    <span class="card-text cursor-pointer"><img src="/file/img/ic-twitte.svg"
+                                            alt="ic"></span>
+                                    <span class="card-text cursor-pointer"><img src="/file/img/ic-facebook.svg"
+                                            alt="ic"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 p-4">
+                        <div class="card">
+                            <img class="card-img-top" src="file/img/img-emety.png" alt="">
+                            <div class="card-body pb-4">
+                                <h4 class="card-title">Agent</h4>
+                                <span class="card-text text-warning">Mr. Luke Skywalker</span>
+                                <div class="card-info">
+                                    <span class="card-text cursor-pointer"><img src="/file/img/ic-ball.svg"
+                                            alt="ic"></span>
+                                    <span class="card-text cursor-pointer"><img src="/file/img/ic-twitte.svg"
+                                            alt="ic"></span>
+                                    <span class="card-text cursor-pointer"><img src="/file/img/ic-facebook.svg"
+                                            alt="ic"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- items products end -->
+        </div>
+    </div>
+    <!-- Ads -->
+    <div class="container-fluid ads">
+        <div class="row">
+            <!-- img - ads -->
+            <div class="col-md-6 p-4 ads-part-img">
+                <img class="d-block img-ads" src="/file/img/img-ads.png" alt="ads">
+                <a name="" id="" class="btn btn-warning btn-padding btn-ads" href="#" role="button">
+                    <img class="icon-btn-ads" src="/file/img/ic-location-white.svg" alt="location">
+                    Melbourne,Australia</a>
+            </div>
+            <!-- txt - ads -->
+            <div class="col-md-6 p-5 ads-part-txt">
+                <h4 class="title">Super Awesome Add</h4>
+                <p>In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod, cob
+                    or whatever comes first agile at the end of the day. Not enough bandwidth closing these latest
+                    prospects is like putting socks on an octopus, yet due diligence</p>
+            </div>
+
+            <!-- txt - ads -->
+            <div class="col-md-6 p-5 ads-part-txt">
+                <h4 class="title text-right">Super Awesome Add</h4>
+                <p class="text-right">In this space market-facing, yet UI work flows , or bake it in. Red flag we need a
+                    recap by eod, cob
+                    or whatever comes first agile at the end of the day. Not enough bandwidth closing these latest
+                    prospects is like putting socks on an octopus, yet due diligence</p>
+            </div>
+            <!-- img - ads -->
+            <div class="col-md-6 p-4 ads-part-img">
+                <img class="d-block img-ads" src="/file/img/img-ads.png" alt="ads">
+                <a name="" id="" class="btn btn-warning btn-padding btn-ads  " href="#" role="button">
+                    <img class="icon-btn-ads" src="/file/img/ic-location-white.svg" alt="location">
+                    Melbourne,Australia</a>
+            </div>
+            <!-- img - ads -->
+            <div class="col-md-6 p-4 ads-part-img">
+                <img class="d-block img-ads" src="/file/img/img-ads.png" alt="ads">
+            </div>
+
+            <!-- txt - ads -->
+            <div class="col-md-6 p-5 ads-part-txt">
+                <h4 class="title">Super Awesome Add</h4>
+
+                <p class="">In this space market-facing, yet UI work flows , or bake it in. Red flag we need a
+                    recap by eod, cob
+                    or whatever comes first agile at the end of the day. Not enough bandwidth closing these latest
+                    prospects is like putting socks on an octopus, yet due diligence</p>
+
+                <a class="btn btn-dark btn-padding mt-4" href="#" role="button">
+                    Show Me More</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-md-6 p-4">
+                <h2 class="text-white">luxestate <br> Explore Real Estate</h2>
+            </div>
+            <div class="col-md-6 p-4">
+                <div class="input-group w-100">
+                    <button id="search-button" type="button" class="btn btn-white  btn-search">
+                        <img src="/file/img/ic-right.svg" alt="btn-right">
+                    </button>
+                    <input id="search-input" type="search" id="form1" class=" form-control input-search"
+                        placeholder="Subscribe To Our Newsletter" />
+                </div>
+            </div>
+            <div class="col-12 ps-4 pe-4">
+                <hr class="hr-white ">
+            </div>
+
+            <div class="row p-4 rtl">
+                <div class="col-md-2">
+                    <div class="list-group list-footer">
+                        <a href="#" class="list-group-item list-group-item-action active">SERVICES</a>
+                        <a href="#" class="list-group-item list-group-item-action">Renting</a>
+                        <a href="#" class="list-group-item list-group-item-action ">Selling</a>
+                        <a href="#" class="list-group-item list-group-item-action ">building</a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="list-group list-footer">
+                        <a href="#" class="list-group-item list-group-item-action active">SERVICES2</a>
+                        <a href="#" class="list-group-item list-group-item-action">Renting</a>
+                        <a href="#" class="list-group-item list-group-item-action ">Selling</a>
+                        <a href="#" class="list-group-item list-group-item-action ">building</a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="list-group list-footer">
+                        <a href="#" class="list-group-item list-group-item-action active">SERVICES3</a>
+                        <a href="#" class="list-group-item list-group-item-action">Renting</a>
+                        <a href="#" class="list-group-item list-group-item-action ">Selling</a>
+                        <a href="#" class="list-group-item list-group-item-action ">building</a>
+                        <a href="#" class="list-group-item list-group-item-action ">building</a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="list-group list-footer">
+                        <a href="#" class="list-group-item list-group-item-action active">SERVICES4</a>
+                        <a href="#" class="list-group-item list-group-item-action">Renting</a>
+                        <a href="#" class="list-group-item list-group-item-action ">Selling</a>
+                        <a href="#" class="list-group-item list-group-item-action ">building</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ltr">
+                    <a class="logo text-white" href="#">luxestate</a>
+                    <span class="text-white info-footer">© 2019 - luxestate,<br> All Right Reserved</span>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'plugins/js/jquery-3.3.1.slim.min.js' %}"></script>
+    <script src="{% static 'plugins/js/popper.min.js' %}"></script>
+    <script src="{% static 'plugins/js/jquery-3.3.1.slim.min.js' %}"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+</body>
+
+</html>

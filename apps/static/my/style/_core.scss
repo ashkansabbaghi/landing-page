@@ -1,0 +1,82 @@
+@import "var";
+@import "responsive";
+
+
+body {
+    color: $txtcolorclack;
+    font-size: $fontsizetext;
+    @include responsive(md){
+        font-size: $fontsizetext-md;
+    }
+}
+
+a {
+    color: $txtcolorclack;
+    text-decoration: none;
+
+    &:hover {
+        color: black;
+    }
+}
+
+p {
+    text-align: justify;
+    line-height: $line-height-p;
+}
+
+
+
+.btn-warning {
+    color: $txtcolorclack;
+
+    &:hover {
+        color: black;
+    }
+}
+
+.card {
+    border: none;
+}
+
+.rtl {
+    direction: rtl;
+}
+.ltr {
+    direction: ltr;
+}
+
+.form-control {
+    border: none;
+    text-align: end;
+    outline: none;
+}
+
+.input-group-text {
+    background: white;
+    border: none;
+    height: 100%;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.btn-padding {
+    padding: 1rem 2rem;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.p-6{
+    padding: 4rem !important;
+}
+
+.btn-white{
+    background: white;
+}

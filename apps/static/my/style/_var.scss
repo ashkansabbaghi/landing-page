@@ -1,0 +1,114 @@
+// bg
+$bgcolor1 : white;
+$bgcolor2 : #f6f5f4;
+$bgcolorhiro : #96bece;
+$bgcolorfooter : #1f373d;
+
+$m-5 : 5rem;
+
+// size font lg
+$fontsizelogo : 25pt;
+$fontsizetitle : 25pt;
+$fontsizenav : 13pt;
+$fontsizehirotxt : 62pt; // 525%
+$fontsizeheadertitle : 40pt;
+$fontsizetext : 13pt;
+$fontsizecardproducttitle : 15pt;
+$fontsizecardproducttext : 13pt;
+$fontsizebtnads : 18pt;
+$fontsizeinfofooter : 14pt;
+
+// size font md
+$fontsizelogo-md : 20pt;
+$fontsizetitle-md : 20pt;
+$fontsizenav-md : 10pt;
+$fontsizehirotxt-md : 40pt; // 525%
+$fontsizeheadertitle-md : 35pt;
+$fontsizetext-md : 10pt;
+$fontsizecardproducttitle-md : 12pt;
+$fontsizecardproducttext-md : 10pt;
+$fontsizebtnads-md : 15pt;
+$fontsizeinfofooter-md : 11pt;
+
+// line height
+$line-height-p : 25pt;
+
+// color text
+$txtcolorclack : #1f373d;
+$textcolorwhite-50 :#8f8f8f;
+$textcolorlistfooter :#919eb1;
+
+// zindex
+$zindexon : 1000;
+$zindexmidel : 100;
+$zindexin : 1;
+
+// size eleman
+$sizehiro : 630px;
+$sizehiro-md : 450px;
+
+// mixin
+
+
+
+@mixin hp($bg, $sizepage) {
+    background-color: $bg;
+    height: $sizepage;
+    width: 100%;
+
+    .title {
+        @include title-apps();
+    }
+
+    .sub-title {
+        @include sub-title-apps;
+        width: 30%;
+    }
+
+    .card {
+        @include box-shadow-card;
+    }
+}
+
+@mixin title-apps {
+    font-size: $fontsizeheadertitle;
+    margin: 2rem;
+
+    @include responsive(md) {
+        font-size: $fontsizeheadertitle-md;
+        margin: 1rem;
+    }
+}
+
+@mixin sub-title-apps {
+    font-size: $fontsizetext;
+    margin: 1rem 2rem 2rem 2rem;
+
+    @include responsive(md) {
+        font-size: $fontsizetext-md;
+        margin: 1rem 2rem 2rem 2rem;
+    }
+}
+
+@mixin input-group-search($mt) {
+    direction: rtl;
+    justify-content: flex-end;
+    margin: $mt 0 0 0;
+}
+
+@mixin btn-search {
+    padding: 1rem 1.5rem;
+}
+
+@mixin box-shadow-card {
+    box-shadow: 0px 0px 20px 0px #d9d9d9;
+}
+
+@mixin bg-hiro($width, $left) {
+    position: relative;
+    background: $bgcolorhiro;
+    width: $width;
+    height: 100%;
+    z-index: $zindexin;
+    left: $left;
+}
